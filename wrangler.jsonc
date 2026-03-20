@@ -43,4 +43,11 @@
 	// Note: FALLBACK_ORIGIN, CLOUDFLARE_ZONE_ID, ACCOUNT_ID, and
 	// DISPATCH_NAMESPACE_API_TOKEN are auto-configured by the setup script
 	"upload_source_maps": true
+   {
+	"vars": {
+		"CUSTOM_DOMAIN": "jiasuqionline.cc",
+	},
+	"routes": [{ "pattern": "*/*", "zone_name": "jiasuqionline.cc" }],
+	"workers_dev": false,
+    }
 }
